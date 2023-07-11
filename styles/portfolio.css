@@ -213,4 +213,26 @@ hr {
 footer {
   margin-top: 110px;
   background: #fff8f3;
+  padding: 130px 230px;
+  display: flex;
+  gap: 115px;
+
+}
+.footer-column{
+  width: 50%;
+}
+.social-icons{
+  display: flex;
+  gap: 24px;
+}
+.contact input[type="text"],.contact input[type="email"],textarea{
+  border: 0;
+  background-color: #fff;
+  width: 100%;
+  padding: 18px;
+  margin: 24px;
+  border-radius: 5px;
+}
+input[type="submit"]{
+  margin: 0 24px;
 }
