@@ -149,14 +149,14 @@ main {
   align-items: center;
   gap: 24px;
 }
-.skill {
+.skill{
   border-radius: 5px;
   background: #fff;
   box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
   padding: 30px;
   margin-bottom: 130px;
 }
-.skill-title {
+.skill-title{
   margin-top: 30px;
   margin-bottom: 20px;
   color: #181818;
@@ -164,7 +164,7 @@ main {
   font-size: 20px;
   font-weight: 700;
 }
-.skill-description {
+.skill-description{
   color: #757575;
   line-height: 28px;
 }
@@ -235,4 +235,79 @@ footer{
 }
 input[type="submit"]{
   margin: 0 24px;
+}
+
+/* responsive design */
+/* mobile devices */
+.hide{
+  display: none;
+}
+@media screen and (max-width:576px) {
+  /* header */
+  .header{
+    background-image: none;
+  }
+  nav, nav ul{
+    flex-direction: column;
+  }
+  .btn-primary{
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  .banner{
+    flex-direction: column;
+    text-align: center;
+  }
+  .banner-greeting{
+    font-size: 25px;
+  }
+  .banner-title{
+    font-size: 40px;
+  }
+  .banner img{
+    width: 100%
+  };
+  
+  /* what i do section */
+  #what-i-do-description{
+    padding: 20px 10px;
+  }
+  .section-description{
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .skill-container,.resume-container{
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px;  
+  }
+  .skill{
+    margin-bottom: 20px;
+  }
+  footer{
+    flex-direction: column;
+    padding: 10px;
+  }
+  .footer-column{
+    width: 100%;
+  }
+  .social-icons{
+    justify-content: center;
+  }
+  .contact input[type="text"],.contact input[type="email"],textarea{
+    width: 80%;
+    display: block;
+    padding: 20px 5px;
+    margin: 10px auto;
+  }
+  .about,.banner{
+    padding: 10px;
+  }
+  .about-info-container{
+    flex-direction: column;
+    gap:5px;
+  }
+  
 }
